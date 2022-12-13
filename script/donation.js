@@ -13,6 +13,7 @@ const submit = () => {
   const email = s("#email");
   const accnt = s("#account");
   const cvv = s("#cvv");
+  const amount = s("#amount");
   let isValid = true;
   let namepattern = /^[a-zA-Z]{2,30}$/;
   let accountpattern = /^[0-9]{8,8}$/;
@@ -45,6 +46,14 @@ const submit = () => {
   } else {
     cvv.nextElementSibling.innerHTML = " ";
   }
+  if (amount.value == "") {
+    amount.nextElementSibling.innerHTML = " Please enther the amount ";
+
+    isValid = false;
+  } 
+  else {
+    amount.nextElementSibling.innerHTML = " ";
+  }
   if (accnt.value == "") {
     accnt.nextElementSibling.innerHTML = " Please enther the account number ";
 
@@ -72,11 +81,13 @@ const clear = () => {
   s("#email").value = null;
   s("#account").value = null;
   s("#cvv").value = null;
+  s("#amount").value = null;
 
   s("#name").nextElementSibling.innerHTML = "*";
   s("#email").nextElementSibling.innerHTML = "*";
   s("#account").nextElementSibling.innerHTML = "*";
   s("#cvv").nextElementSibling.innerHTML = "*";
+  s("#amount").nextElementSibling.innerHTML = "*";
 };
 
 const back = () => {
