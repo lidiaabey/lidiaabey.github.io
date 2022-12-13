@@ -1,7 +1,7 @@
 /* ----- desktop view ------- */
 html {
   font-family: Verdana, sans-serif;
-  background-image: url(../images/beluga/beluga-bg.jpg);
+  background-image: url(../Images/beluga/beluga-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -113,7 +113,7 @@ main {
   list-style-type: none;
 }
 .facts ul {
-  list-style-image: url(../images/beluga/beluga-icon.png);
+  list-style-image: url(../Images/beluga/beluga-icon.png);
   padding: 0px 5px 19px 4em;
 }
 .facts li {
