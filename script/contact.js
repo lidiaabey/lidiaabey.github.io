@@ -1,3 +1,11 @@
+// loading the navigation and footer
+$(function () {
+  $(".navclass").load("navigation.html");
+});
+$(function () {
+  $(".footerclass").load("footer.html");
+});
+
 const s = (selector) => document.querySelector(selector);
 
 const processEntries = () => {
@@ -10,7 +18,6 @@ const processEntries = () => {
   const fname = s("#fname");
   const lname = s("#lname");
   const email = s("#email");
-
 
   // checking user entries for validity
   let isValid = true;

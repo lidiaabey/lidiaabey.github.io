@@ -1,5 +1,13 @@
 "use strict";
 
+// loading the navigation and footer
+$(function () {
+  $(".navclass").load("navigation.html");
+});
+$(function () {
+  $(".footerclass").load("footer.html");
+});
+
 // the event handler for the click event of each h3 element
 const toggle = (evt) => {
   //console.log(evt.currentTarget);

@@ -1,5 +1,13 @@
 "use strict";
 
+// loading the navigation and footer
+$(function () {
+  $(".navclass").load("navigation.html");
+});
+$(function () {
+  $(".footerclass").load("footer.html");
+});
+
 //declaring an array of images
 let myImagesArray = [
   "Images/beluga/slideshow/p1.jpg",

@@ -1,5 +1,13 @@
 "use strict";
 
+// loading the navigation and footer
+$(function () {
+  $(".navclass").load("navigation.html");
+});
+$(function () {
+  $(".footerclass").load("footer.html");
+});
+
 $(function () {
   $("#accordion").accordion();
 });
